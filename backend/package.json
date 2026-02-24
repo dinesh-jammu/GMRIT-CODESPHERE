@@ -4,7 +4,10 @@
   "description": "",
   "main": "src/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest run --coverage",
     "dev": "nodemon src/app.js",
     "start": "node src/app.js"
   },
@@ -19,6 +22,9 @@
     "mongoose": "^8.19.1"
   },
   "devDependencies": {
-    "nodemon": "^3.1.10"
+    "@vitest/ui": "^4.0.18",
+    "nodemon": "^3.1.10",
+    "supertest": "^7.2.2",
+    "vitest": "^4.0.18"
   }
 }
